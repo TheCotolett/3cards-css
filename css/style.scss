@@ -1,0 +1,162 @@
+//------------CSS Reset (Skip to Line 46)------------//
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+//---------------File starts here---------------//
+@import url(https://fonts.google.com/specimen/Lexend+Deca);
+@import url(https://fonts.google.com/specimen/Big+Shoulders+Display);
+
+
+html{
+    height: 100%;
+}
+body{
+    background-color: hsl(0, 0%, 95%);
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+.attribution{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: hsl(0, 0%, 95%);
+    //WIP
+}
+.hero{
+    height: 100%;
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(255, 0, 0);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bigbox{
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(15, 255, 47);
+    height: fit-content;
+    width: 80%;
+
+    display: flex;
+}
+
+.orange-box{
+    background-color:hsl(31, 77%, 52%);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    //border-radius: 8px 8px 0px 0px;
+    ul{
+        height: 85%;
+        li{ //icon
+            margin: 10px;
+            margin-top: 15px;
+        }
+        li{
+            font-family: 'Big Shoulders Display', cursive;
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.753);
+        }
+
+    }
+}
+.green-box{
+    background-color: hsl(184, 100%, 22%);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    ul{
+        height: 85%;
+        li{ //icon
+            margin: 10px;
+            margin-top: 15px;
+        }
+        li{
+            font-family: 'Big Shoulders Display', cursive;
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.753);
+        }
+
+    }
+}
+.darkgreen-box{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(179, 100%, 13%);
+    padding: 10px;
+    //border-radius: 0px 0px 8px 8px;
+    ul{
+        height: 85%;
+        li{ //icon
+            margin: 10px;
+            margin-top: 15px;
+        }
+        li{
+            font-family: 'Big Shoulders Display', cursive;
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.753);
+        }
+
+    }
+}
+
+.card-title{
+    font-weight: 400;
+    font-weight: bold;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: uppercase;
+}
+.learn-more{
+    width: fit-content;
+    align-self: center;
+    margin: 10px;
+    color: hsl(184, 100%, 22%);
+    border-radius: 15px;
+    border-width: 0px;
+    padding: 5px;
+}
